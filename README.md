@@ -25,3 +25,20 @@ viewer - '' (null string, just hit enter)
 
 You can hardcode more passwords for manufacturers in the `/network/ServerThread.java`.  
 A list of car is maintained by a simple file `cars.txt`. You can simply hardcode more cars by changing this file. In a real life scenario, this can be done by the means of a database.
+
+You need to `Allow multiple instances` in the configuration settings in IntelliJ. To do this, click on `Edit Configurations...` on the top-right. Click `Modify options` and then check the option saying `Allow multiple instances` if unchecked. Not doing this will keep you from creating multiple window of the application at the same time.
+
+<img src="./screenshots/ss1.png" height="300px" />
+<img src="./screenshots/ss2.png" height="300px" />
+
+Now time to setup JavaFX.
+
+## JavaFX
+
+`openjfx-17.0.2_windows_x64_bin-sdk` is already included in the repo. Yet you can get other versions java fx from [gluon](https://gluonhq.com/products/javafx/). Download the zip and unzip it at your preferable folder. You need to add this as an external library in your IDE.
+
+<img src="./screenshots/ss3.png" height="300px" />
+<img src="./screenshots/ss4.png" height="300px" />
+<img src="./screenshots/ss5.png" height="300px" />
+
+Now click on `Project Structure...` form File Menu on top. Then hit `Lbraries` from the side menu, click the little PLUS button, add the lib folder path og JavaFX as shown in the screenshots and you are good to go.
