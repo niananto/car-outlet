@@ -4,11 +4,13 @@ This project was made with Java and JavaFX. The idea is to have multiple car sel
 
 ## Setup Locally
 
-First of all, do a `git clone` or download the zip. Then open this directory as an IntelliJ IDEA Project. If you don't have IntelliJ IDEA installed in your computer, do as I tell you.
+First of all, do a `git clone` or download the zip.  
 
-INSTALL IT FFS. WHAT ELSE ARE YOU GOING TO DO!
+Now if you don't have IntelliJ IDEA installed in your computer, do as I tell you.
 
-Then it's pretty much all about some clicks here and there. Build the project. Run `/network/Server.java` first and then you can run multiple instances of `/fx/Main.java` to login as Manufacturer (seller) or Viewer (buyer).
+INSTALL IT.
+
+Create a  new project at your favorable directory. Copy this repo's `src` and `cars.txt` there. Then it's pretty much all about some clicks here and there. Build the project. Run `/network/Server.java` first and then you can run multiple instances of `/fx/Main.java` to login as Manufacturer (seller) or Viewer (buyer).
 
 Accepted usernames and passwords for login as a manufacturer -
 ```
@@ -26,7 +28,7 @@ viewer - '' (null string, just hit enter)
 You can hardcode more passwords for manufacturers in the `/network/ServerThread.java`.  
 A list of car is maintained by a simple file `cars.txt`. You can simply hardcode more cars by changing this file. In a real life scenario, this can be done by the means of a database.
 
-You need to `Allow multiple instances` in the configuration settings in IntelliJ. To do this, click on `Edit Configurations...` on the top-right. Click `Modify options` and then check the option saying `Allow multiple instances` if unchecked. Not doing this will keep you from creating multiple window of the application at the same time.
+You need to `Allow multiple instances` in the configuration settings in IntelliJ. To do this, open `/fx/Main.java` and click on `Edit Configurations...` on the top-right. Click `Modify options` and then check the option saying `Allow multiple instances` if unchecked. Not doing this will keep you from creating multiple window of the application at the same time. Remember to do this for `/fx/Main.java` as you want multiple instances of that only.
 
 <img src="./screenshots/ss1.png" height="300px" />
 <img src="./screenshots/ss2.png" height="300px" />
